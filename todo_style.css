@@ -1,0 +1,61 @@
+h2 {
+    font-family:arial;
+}
+
+form {
+    display: inline-block;
+}
+
+body {
+  background: url("https://heavyeditorial.files.wordpress.com/2013/03/cool-simple-and-minimalist-desktop-wallpaper-rmpil.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Background provided by: http://heavy.com/social/2013/03/20-minimalistic-wallpapers-that-should-be-on-your-desktop/ */
+
+
+#button {
+  display: inline-block;
+  height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+  /* changes cursor to pointer when hovering over the button */
+  cursor: pointer;
+}
+
+#printbutton {
+  display: inline-block;
+  height:20px;
+  width:200px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+  cursor: pointer;
+}
+
+.list {
+	font-family:garamond;
+  font-weight:bold;
+	color:#000;
+}
+
+.almost_bottom{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
