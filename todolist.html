@@ -3,7 +3,7 @@
 Things still left to do:
   1. Add comments on all pages (html, css, js)
   2. Add clicks that fade completed tasks
-  2.5 Add dropdown text "how does this application work?"
+***  2.5 Add dropdown text "how does this application work?"
     Dropdown should include instructions on buttons and such
   3. More UI cleanliness
   4. Add footer that shows what resources were used to make this
@@ -14,26 +14,45 @@ Things still left to do:
     	<title>To Do List w/ jQuery</title>
       <!-- Calling jQuery to use for CDN (my website!) -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript" src="todo_script.js"></script>
-        <link rel="stylesheet" type="text/css" href="todo_style.css"/>
+      <!-- Calling jQuery UI to use for CDN (my website!) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="todo_script.js"></script>
+      <link rel="stylesheet" type="text/css" href="todo_style.css"/>
 	</head>
 	<body>
-  	<center><h2>To Do List</h2></center>
+  	<center><h2>AnthonysToDoList</h2></center>
+
+<!-- Adding the "How does this application work?" dropdown using Accordion function -->
+    <center>
+      <div id="howitworks">
+        <h3>How does this app work?</h3>
+        <div>
+          <p>Built with jQuery, this To Do List works.</p>
+        </div>
+      </div>
+    </center>
+
+<!-- Form sheet for user input of each 'objective' to do -->
     <div class="almost_bottom">
   		<form name="checkListForm">
   			Objective:<br>
+        <!-- User input of the 'objective' -->
+        <!-- Always use placeholders to help user input correctly -->
         <input type="text" name="checkListItem" placeholder="What should we do?"/>
         <br>
+        <!-- User input of the time the oobjective should be done -->
         Time:<br>
         <input type="text" name="checkListTime" placeholder="--:-- am/pm"/>
   		</form>
       <br>
   		<center><div id="button">Add!</div></center>
     </div>
+<!-- End of the form sheet -->
+
     <center>
       <div id="printbutton">Print your To Do List!</div>
       <br>
-      <div class="list"></div>
+      <ol></ol>
     </center>
 	</body>
 </html>
