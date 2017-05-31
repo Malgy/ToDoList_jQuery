@@ -12,14 +12,14 @@ form {
 }
 
 body {
-  background: url("https://heavyeditorial.files.wordpress.com/2013/03/cool-simple-and-minimalist-desktop-wallpaper-rmpil.png")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url("https://wallpaperlayer.com/img/2015/8/hipster-minimal-wallpaper-4201-4429-hd-wallpapers.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* Background provided by: http://heavy.com/social/2013/03/20-minimalistic-wallpapers-that-should-be-on-your-desktop/ */
 
+/* background credit: https://wallpaperlayer.com/hipster-minimal-wallpaper-4201.html */
 
 #button {
   display: inline-block;
@@ -75,9 +75,10 @@ ol li {
 	font-family: Verdana, Arial, Sans-Serif;
 }
 
-ol .ui-selected {
-	background: #F39814; color: white;
-}
+/*ol .ui-selected {
+	background: #F39814;
+  color: white;
+}*/
 
 .almost_bottom{
   position: absolute;
@@ -97,4 +98,10 @@ ol .ui-selected {
   background-color: #efefef;
   text-align: center;
   font-family: arial;
+}
+
+@media (max-width: 996px) { /* do not show footer on mobile devices, looks gross */
+  #footer {
+    display: none;
+  }
 }

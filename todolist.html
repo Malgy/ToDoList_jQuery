@@ -2,23 +2,26 @@
 <!--
 Things still left to do:
 ***  1. Add comments on all pages (html, css, js)
-  2. Add clicks that fade completed tasks
+***  2. Add clicks that fade completed tasks
 ***  2.5 Add dropdown text "how does this application work?"
     Dropdown should include instructions on buttons and such
   3. More UI cleanliness
 ***  4. Add footer that shows what resources were used to make this
-  5. Add function to add button where as soon as added, clears toAdd and time from
-
+***  5. Add function to add button where as soon as added, clears toAdd and time from
+***  6. Still need to fix footer issue on mobile
 -->
 <html>
     <head>
-    	<title>To Do List w/ jQuery</title>
+    	<title>AnthonysToDoList</title>
       <!-- Calling jQuery to use for CDN (my website!) -->
+      <link rel="shortcut icon" href="ico_logos/ATDL.ico" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <!-- Calling jQuery UI to use for CDN (my website!) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
       <script type="text/javascript" src="todo_script.js"></script>
       <link rel="stylesheet" type="text/css" href="todo_style.css"/>
+      <!-- Mobile friendly -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
   	<center><h2>AnthonysToDoList</h2></center>
@@ -29,6 +32,10 @@ Things still left to do:
         <h3>How does this app work?</h3>
         <div>
           <p>Built with jQuery, this To Do List works.</p>
+          <p>Add objective and time at the bottom to create a list of things to do!</p>
+          <p>When complete, click on the objective to remove it from the list.</p>
+          <p>Also have the option to print the list as well if not yet completed!</p>
+          <p>Source code is found on my Github Repo!</p>
         </div>
       </div>
     </center>
